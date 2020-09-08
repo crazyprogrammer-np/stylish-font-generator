@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylish Font Generator</title>
+  <!--Bootstrap Inline Path-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--Fontawesome CDN-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Offline Fonts-->
+  <link rel="stylesheet" href="font-main.css">
+  <!--Internal CSS StyleSheet-->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    ::-webkit-scrollbar{
+      width: 10px;
+    }
+    ::-webkit-scrollbar-thumb{
+      background: linear-gradient(transparent, teal);
+      border-radius: 50px;
+    }
+    body {
+      background: rgb(240, 230, 230);
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .input-box {
+      display: flex;
+    }
+    .appTitle {
+      background: #222;
+      color: #fff;
+      padding: 5px 10px;
+    }
+    #input {
+      padding: 0 5px;
+    }
+    #submit {
+      height: 28px;
+      margin-top: 24px;
+      padding: 0 5px;
+      outline: none;
+    }
+    .font-preview {
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      font-size: 30px;
+      overflow-y: scroll;
+    }
+    .font-preview div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        display: none;
+    }
+    .font-preview input {
+      width: 100%;
+      background: none;
+      outline: none;
+      border: none;
+      font-size: 30px;
+      color: #111;
+    }
+    .font-preview i{
+      font-size: 16px;
+      cursor: pointer;
+      padding-right: 8px;
+    }
+    #devInfo {
+      position: absolute;
+      margin-top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #888;
+      letter-spacing: 1px;
+      font-family: 'Ubuntu';
+    }
+    @media screen and (max-width:400px) {
+      ::-webkit-scrollbar{
+        width: 5px;
+      }
+      .appTitle {
+        font-size: 25px;
+      }
+      #devInfo {
+        margin-top: -28px;
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="container-content my-4">
+      <h2 class="text-center appTitle">Stylish Font Generator</h2>
+      <hr>
+      <span id="devInfo">by crazy programmer</span>
+      <div class="input-box">
+        <input id="input" type="text" class="input-group my-4" placeholder="Type text here">
+        <button id="submit" class="btn-primary">Submit</button>
+      </div>
+      <hr>
+
+      <div class="font-preview my-3">
+        <div>
+            <input style="font-family: 'Ubuntu';" disabled></input>
+        </div>
+        <div>
+            <input style="font-family: 'Alliens';" disabled></input>
+        </div>
+        <div>
+            <input style="font-family: 'Blacklet';" disabled></input>
+        </div>
+        <div>
+            <input style="font-family: 'Bourbon whiskey';" disabled></input>
+        </div>
+        <div>
+            <input style="font-family: 'Dark Seed';" disabled></input>
+        </div>
+        <div>
+            <input style="font-family: 'DEAD ATTACK'; text-transform: uppercase;"></input disabled>
+        </div>
+        <div>
+            <input style="font-family: 'Dearest';" disabled></input>
+        </div>
+        <div>
+            <input style="font-family: 'HARD STREET'; text-transform: uppercase;" disabled></input>
+        </div>
+        <div>
+            <input style="font-family: 'Heaters';" disabled></input>
+        </div>
+        <div>
+            <input style="font-family: 'High Beasty';" disabled></input>
+        </div>
+        <div>
+            <input style="font-family: 'Magic Love';" disabled></input>
+        </div>
+        <div>
+            <input style="font-family: 'Orange Blossom';" disabled></input>
+        </div>
+        <div>
+            <input style="font-family: 'Relive Demo';" disabled></input>
+        </div>
+        <div>
+            <input style="font-family: 'Samble Tracie Bold';" disabled></input>
+        </div>
+        <div>
+            <input style="font-family: 'Samble Tracie Swash';" disabled></input>
+        </div>
+        <div>
+            <input style="font-family: 'Samble Tracie Swash Bold';" disabled></label>
+        </div>
+        <div>
+            <input style="font-family: 'Samble Tracie';" disabled></input>
+        </div>
+        <div>
+            <input style="font-family: 'School Mania';" disabled></input>
+        </div>
+        <div>
+            <input style="font-family: 'Serif Sketech';" disabled></input>
+        </div>
+        <div>
+            <input style="font-family: 'The Manaline Font';" disabled></input>
+        </div>
+        <div>
+            <input style="font-family: 'Victorian Art Magic Remains';" disabled></input>
+        </div>
+        <div>
+            <input style="font-family: 'ZEBRA';" disabled></input>
+        </div>
+        <div>
+            <input style="font-family: 'ZOMBIES NIGHT'; text-transform: uppercase;"></input disabled>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
